@@ -4,15 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { GanttModule } from './gantt/gantt.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
+  exports: [],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    GanttModule
   ],
   providers: [],
   bootstrap: [AppComponent]
